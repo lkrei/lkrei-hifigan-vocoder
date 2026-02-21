@@ -2,7 +2,7 @@
 
 Реализован вокодер HiFi-GAN по статье J.Kong et al. (2020). Модель обучена на датасете RUSLAN, логирование через W&B. 
 
-(Визуализации отражены в Experiments-ноутбуке).
+(Дополнительные генерации отражены в Experiments-ноутбуке).
 
 **Ссылки:**
 - Логи обучения (W&B): [проект hifigan_vocoder](https://wandb.ai/aredaw882-hse-university/hifigan_vocoder)
