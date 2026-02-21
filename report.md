@@ -153,6 +153,15 @@ python synthesize.py custom_dir_path=wav_test synthesizer.output_dir=output
 
 **Вывод (часть 1).** Resynthesis на данных RUSLAN показывает, что вокодер хорошо воспроизводит общую структуру речи: огибающая waveform совпадает, паузы и ударные слоги на месте, речь разборчива. Mel-спектрограммы оригинала и сгенерированного аудио визуально очень похожи, основные гармоники и формантная структура сохраняются. На mel difference видно, что основные ошибки приходятся на тихие участки (паузы) и на верхние mel-каналы (высокие частоты); вокодер слегка сглаживает высокочастотные детали. Mel L1 error стабильный по файлам (~0.43–0.55), без выбросов.
 
+<img width="1369" height="495" alt="download" src="https://github.com/user-attachments/assets/3b13655f-f549-436c-969a-d96a4aac7c07" />
+
+
+<img width="1789" height="1181" alt="download-1" src="https://github.com/user-attachments/assets/efdb30ef-244a-4ad9-af31-ff71d544e959" />
+
+
+<img width="989" height="290" alt="download-2" src="https://github.com/user-attachments/assets/14c75f38-fcee-4a3c-aeae-fda8824cd057" />
+
+
 ### 6.2 Анализ на внешних данных (MOS)
 
 Взяты аудиозаписи тестовых предложений MOS (1.wav, 2.wav, 3.wav). Из них извлечены мел-спектрограммы, сгенерированы синтезированные версии вокодером, проведено сравнение по waveform и мел-спектрограммам.
