@@ -1,6 +1,6 @@
 # HiFi-GAN Vocoder (русский, RUSLAN)
 
-Реализация вокодера [HiFi-GAN](https://arxiv.org/abs/2010.05646) для синтеза речи на русском языке. Обучен на датасете [RUSLAN](https://ruslan-corpus.github.io/).
+Реализация вокодера HiFi-GAN для синтеза речи на русском языке. Обучен на датасете [RUSLAN](https://ruslan-corpus.github.io/).
 
 Ноутбуки:
 - [Demo (Colab)](https://colab.research.google.com/drive/1hfjo5XbylGz5n_f6cv0RPMExKhcBNz4h?usp=sharing) — инференс, прослушивание, скорость
