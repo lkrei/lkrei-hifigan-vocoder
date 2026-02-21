@@ -8,6 +8,8 @@
 
 Логирование: [W&B](https://wandb.ai/aredaw882-hse-university/hifigan_vocoder)
 
+Report: [Report.md](https://github.com/lkrei/lkrei-hifigan-vocoder/blob/main/report.md)
+
 ## Установка
 
 ```bash
