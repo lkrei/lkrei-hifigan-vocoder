@@ -1,0 +1,29 @@
+defaults:
+  - model: hifigan_v1
+  - datasets: custom_dir
+  - dataloader: default
+  - transforms: default
+  - _self_
+
+custom_dir_path: "data/test_data"
+
+dataloader:
+  batch_size: 1
+  num_workers: 0
+
+mel_spectrogram:
+  sr: 22050
+  win_length: 1024
+  hop_length: 256
+  n_fft: 1024
+  f_min: 0
+  f_max: 11025
+  n_mels: 80
+  power: 2.0
+  pad_value: -11.5129251
+
+synthesizer:
+  device: auto
+  checkpoint_path: "results/model_best.pth"
+  output_dir: "output"
+  seed: 42

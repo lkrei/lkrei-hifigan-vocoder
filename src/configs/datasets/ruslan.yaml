@@ -1,0 +1,19 @@
+train:
+  _target_: src.datasets.RuslanDataset
+  audio_dir: ${data_dir}
+  target_sr: 22050
+  segment_size: 8192
+  split: train
+  train_ratio: 0.9
+  val_ratio: 0.05
+  seed: 42
+
+val:
+  _target_: src.datasets.RuslanDataset
+  audio_dir: ${data_dir}
+  target_sr: 22050
+  segment_size: 8192
+  split: val
+  train_ratio: 0.9
+  val_ratio: 0.05
+  seed: 42

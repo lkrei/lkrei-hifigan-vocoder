@@ -1,0 +1,4 @@
+test:
+  _target_: src.datasets.CustomDirDataset
+  dir_path: ${custom_dir_path}
+  target_sr: 22050
