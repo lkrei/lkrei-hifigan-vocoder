@@ -174,6 +174,22 @@ python synthesize.py custom_dir_path=wav_test synthesizer.output_dir=output
 
 **Вывод (часть 2).** На MOS огибающая и паузы сохраняются, но амплитуда сгенерированного аудио ниже оригинала (на MOS 3 примерно ±0.5 против ±1.0), что заметнее, чем на RUSLAN, и может быть связано с другими акустическими условиями. Mel-структура в целом воспроизведена, но высокие mel-каналы (>60) сглаживаются сильнее. Паттерн ошибок на mel difference похож на RUSLAN, однако на MOS 2 и MOS 3 ошибка больше, в том числе в средних каналах. Mel L1 error на MOS почти в два раза выше, чем на RUSLAN; модель обучена на RUSLAN и хуже генерализует на внешние данные с другими условиями записи.
 
+<img width="1387" height="495" alt="download" src="https://github.com/user-attachments/assets/7ecd5bd9-3c76-492b-9615-277c2bf9178f" />
+
+
+<img width="1389" height="495" alt="download-2" src="https://github.com/user-attachments/assets/cb946f5e-3e15-4bcf-89d4-2c059b2b54e7" />
+
+
+<img width="1389" height="495" alt="download-3" src="https://github.com/user-attachments/assets/898ed4e7-59c6-4c66-a1ba-922c0efd3814" />
+
+
+<img width="1589" height="299" alt="download-1" src="https://github.com/user-attachments/assets/9c52fbfa-b421-48af-a784-e7557f61ad1c" />
+
+
+<img width="590" height="290" alt="download-4" src="https://github.com/user-attachments/assets/47e94e7a-1578-4842-b05b-5603b5589f2a" />
+
+
+
 ### 6.3 Анализ полной TTS системы
 
 Использованы текстовые транскрипции: из тестовой части RUSLAN (те же 16 файлов) и из внешнего датасета (три тестовых предложения MOS). Аудио получено пайплайном: акустическая модель MMS-TTS (facebook/mms-tts-rus) по тексту даёт waveform, затем ресемплинг в 22050 Hz, извлечение мела нашим модулем, наш вокодер выдаёт финальное аудио. Для сравнения использованы также варианты только resynthesis (mel из оригинала в вокодер).
